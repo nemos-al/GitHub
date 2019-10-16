@@ -10,14 +10,14 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.view.View;
 
-public class MyDrow extends View {
+public class MyDraw extends View {
 
     int N = 50; // количество шариков
     float[] x  = new float[N];
     float[] y  = new float[N];
     float[] vx = new float[N];
     float[] vy = new float[N];
-    public MyDrow(Context context) {
+    public MyDraw(Context context) {
         super(context);
         for (int i = 0; i < N; i++) {
             x[i] = (float) (Math.random() * 500);
