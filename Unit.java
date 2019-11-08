@@ -1,11 +1,11 @@
 public interface Actions {
     public void movie(){}
-    public void movie(){}
     public void attack(){}
     public void get_damage(){}
     public void defence(){}
     public void out(){}
 }
+
 
 abstract class Unit {
     String name;
@@ -17,9 +17,9 @@ abstract class Unit {
         this.name=name;
         this.Damage=200;
     }
-
-
 }
+
+
 class Robot extends Unit{
     int armor;
 
@@ -32,8 +32,23 @@ class Robot extends Unit{
         public void move(){
             System.out.println("быстро");
         }
+        public void attack(){Damage}
+        public void get_damage(){if (armor-Damage>=0){
+            armor-=Damage;
+        }
+        else if (health-Damage>0){
+            health-=Damage;
+        }
+        else System.out.println(name+" мёртв");
+        }
+        public void defence(){System.out.println("быстро");}
+        public void out(){System.out.println("Имя: "+name);
+            System.out.println("Здоровье: "+health);
+            System.out.println("Атака: " Damage);}
     }
 }
+
+
 class Wizzard extends Unit{
     int mana;
     final int CoolDown;
@@ -43,9 +58,9 @@ class Wizzard extends Unit{
         this.mana = mana;
         this.CoolDown=30;
     }
-
-
 }
+
+
 class Warrior extends Unit {
     public void rush(){}
     final int CoolDown;
