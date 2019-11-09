@@ -1,9 +1,3 @@
 <resources>
-    <string name="button_def">Вход</string>
-    <string name="login">lalala</string>
-    <string name="password">lalala</string>
-    <string name="hint">lalala - не пароль</string>
-    <string name="app_name">My Application</string>
-    <string name="button_green">Верно</string>
-    <string name="button_red">Вы ошиблись в логине или пароле</string>
+    <string name="app_name">Intents</string>
 </resources>
