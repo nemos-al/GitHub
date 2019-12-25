@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimaryDark"
-    android:orientation="vertical"
-    tools:context="ru.samsung.itschool.book.layouts.MainActivity">
+    android:orientation="vertical">
 
-    <ScrollView
+    <fragment
+        android:id="@+id/button_fragment"
+        android:name="com.example.myapplication.ButtonFragment."
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1">
+        android:layout_height="wrap_content"
+        tools:layout="@layout/button_fragment" />
 
-        <LinearLayout
-            android:id="@+id/Messages_field"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
-    <ScrollView
+    <fragment
+        android:id="@+id/checkbox_fragment"
+        android:name="com.example.myapplication.CheckBoxFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="5">
+        android:layout_height="wrap_content"
+        tools:layout="@layout/checkbox_fragment" />
 
-        <LinearLayout
-            android:id="@+id/ButtonField"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+    <fragment
+        android:id="@+id/image_fragment"
+        android:name="com.example.myapplication.ImageFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:layout="@layout/image_fragment" />
 
 </LinearLayout>
